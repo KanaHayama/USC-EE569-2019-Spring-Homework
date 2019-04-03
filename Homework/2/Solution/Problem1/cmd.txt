@@ -1,0 +1,53 @@
+plot(thresholds, Precision);saveas(gcf,'pig_sobel_precision.png');
+plot(thresholds, Recall);saveas(gcf,'pig_sobel_recall.png');
+bar(1:5, mean_Precision_over_thresholds);saveas(gcf,'pig_sobel_mean_precision_over_thresholds.png');
+bar(1:5, mean_Recall_over_thresholds);saveas(gcf,'pig_sobel_mean_recall_over_thresholds.png');
+plot(thresholds, mean_Precision_over_GTs);saveas(gcf,'pig_sobel_mean_precision_over_groundTruth.png');
+plot(thresholds, mean_Recall_over_GTs);saveas(gcf,'pig_sobel_mean_recall_over_groundTruth.png');
+plot(thresholds, F);saveas(gcf,'pig_sobel_F.png');
+
+plot(thresholds, Precision);saveas(gcf,'tiger_sobel_precision.png');
+plot(thresholds, Recall);saveas(gcf,'tiger_sobel_recall.png');
+bar(1:5, mean_Precision_over_thresholds);saveas(gcf,'tiger_sobel_mean_precision_over_thresholds.png');
+bar(1:5, mean_Recall_over_thresholds);saveas(gcf,'tiger_sobel_mean_recall_over_thresholds.png');
+plot(thresholds, mean_Precision_over_GTs);saveas(gcf,'tiger_sobel_mean_precision_over_groundTruth.png');
+plot(thresholds, mean_Recall_over_GTs);saveas(gcf,'tiger_sobel_mean_recall_over_groundTruth.png');
+plot(thresholds, F);saveas(gcf,'tiger_sobel_F.png');
+
+
+for i=1:5,
+mesh(thresholds, thresholds, squeeze(Precision(i,:,:)));view(-70,10);saveas(gcf,['pig_canny_precision_gt',num2str(i),'.png']);
+mesh(thresholds, thresholds, squeeze(Recall(i,:,:)));view(110,10);saveas(gcf,['pig_canny_recall_gt',num2str(i),'.png']);
+end;
+bar(1:5, mean_Precision_over_thresholds);saveas(gcf,'pig_canny_mean_precision_over_thresholds.png');
+bar(1:5, mean_Recall_over_thresholds);saveas(gcf,'pig_canny_mean_recall_over_thresholds.png');
+mesh(thresholds, thresholds, mean_Precision_over_GTs);view(-70,10);saveas(gcf,'pig_canny_mean_precision_over_groundTruth.png');
+mesh(thresholds, thresholds, mean_Recall_over_GTs);view(110,10);saveas(gcf,'pig_canny_mean_recall_over_groundTruth.png');
+mesh(thresholds, thresholds, F);view(160,10);saveas(gcf,'pig_canny_F.png');
+
+for i=1:5,
+mesh(thresholds, thresholds, squeeze(Precision(i,:,:)));view(-70,10);saveas(gcf,['tiger_canny_precision_gt',num2str(i),'.png']);
+mesh(thresholds, thresholds, squeeze(Recall(i,:,:)));view(110,10);saveas(gcf,['tiger_canny_recall_gt',num2str(i),'.png']);
+end;
+bar(1:5, mean_Precision_over_thresholds);saveas(gcf,'tiger_canny_mean_precision_over_thresholds.png');
+bar(1:5, mean_Recall_over_thresholds);saveas(gcf,'tiger_canny_mean_recall_over_thresholds.png');
+mesh(thresholds, thresholds, mean_Precision_over_GTs);view(-70,10);saveas(gcf,'tiger_canny_mean_precision_over_groundTruth.png');
+mesh(thresholds, thresholds, mean_Recall_over_GTs);view(110,10);saveas(gcf,'tiger_canny_mean_recall_over_groundTruth.png');
+mesh(thresholds, thresholds, F);view(160,10);saveas(gcf,'tiger_canny_F.png');
+
+
+plot(thresholds, Precision);saveas(gcf,'pig_structured_precision.png');
+plot(thresholds, Recall);saveas(gcf,'pig_structured_recall.png');
+bar(1:5, mean_Precision_over_thresholds);saveas(gcf,'pig_structured_mean_precision_over_thresholds.png');
+bar(1:5, mean_Recall_over_thresholds);saveas(gcf,'pig_structured_mean_recall_over_thresholds.png');
+plot(thresholds, mean_Precision_over_GTs);saveas(gcf,'pig_structured_mean_precision_over_groundTruth.png');
+plot(thresholds, mean_Recall_over_GTs);saveas(gcf,'pig_structured_mean_recall_over_groundTruth.png');
+plot(thresholds, F);saveas(gcf,'pig_structured_F.png');
+
+plot(thresholds, Precision);saveas(gcf,'tiger_structured_precision.png');
+plot(thresholds, Recall);saveas(gcf,'tiger_structured_recall.png');
+bar(1:5, mean_Precision_over_thresholds);saveas(gcf,'tiger_structured_mean_precision_over_thresholds.png');
+bar(1:5, mean_Recall_over_thresholds);saveas(gcf,'tiger_structured_mean_recall_over_thresholds.png');
+plot(thresholds, mean_Precision_over_GTs);saveas(gcf,'tiger_structured_mean_precision_over_groundTruth.png');
+plot(thresholds, mean_Recall_over_GTs);saveas(gcf,'tiger_structured_mean_recall_over_groundTruth.png');
+plot(thresholds, F);saveas(gcf,'tiger_structured_F.png');

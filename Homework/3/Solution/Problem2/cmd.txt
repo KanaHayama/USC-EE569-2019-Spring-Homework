@@ -1,0 +1,5 @@
+./Problem2.exe -f t "../../../Home Work No. 3/pattern3.raw"
+./Problem2.exe -f k "../../../Home Work No. 3/pattern4.raw"
+./Problem2.exe -f s -h 691 -w 550 "../../../Home Work No. 3/deer.raw"
+./Problem2.exe -f d -h 691 -w 550 "../../../Home Work No. 3/deer.raw"
+./Problem2.exe -f r -h 500 -w 690 -c 3 "../../../Home Work No. 3/rice.raw"

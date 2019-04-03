@@ -1,0 +1,3 @@
+./Problem1.exe -p a "../../Home Work No. 3"
+./Problem1.exe -p b "../../Home Work No. 3/hat.raw"
+./Problem1.exe -p c -h 712 -w 1072 "../../Home Work No. 3/classroom.raw"

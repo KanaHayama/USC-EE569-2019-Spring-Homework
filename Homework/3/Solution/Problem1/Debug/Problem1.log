@@ -1,0 +1,21 @@
+﻿  Problem1.cpp
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(383): warning C4102: “FindRowMin”: 未引用的标签
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(551): warning C4244: “return”: 从“double”转换到“unsigned char”，可能丢失数据
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(889): warning C4244: “参数”: 从“double”转换到“const T”，可能丢失数据
+          with
+          [
+              T=unsigned char
+          ]
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(189): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+  c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(176): note: 编译 类 模板 成员函数 "double Image<unsigned char>::getLinearInterplatedValue(const double,const double,const int,const bool) const" 时
+  c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(638): note: 参见对正在编译的函数 模板 实例化“double Image<unsigned char>::getLinearInterplatedValue(const double,const double,const int,const bool) const”的引用
+  c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(305): note: 参见对正在编译的 类 模板 实例化 "Image<unsigned char>" 的引用
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(190): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(191): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(192): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+c:\users\orzfi\onedrive\设备共享\ee569\homework\3\solution\problem1\problem1.cpp(197): warning C4244: “参数”: 从“double”转换到“const T”，可能丢失数据
+          with
+          [
+              T=unsigned char
+          ]
+  Problem1.vcxproj -> C:\Users\orzfi\OneDrive\设备共享\EE569\Homework\3\Solution\Problem1\Debug\Problem1.exe
